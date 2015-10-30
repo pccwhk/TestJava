@@ -41,6 +41,7 @@ public class TestDeadLock {
 					}
 					System.out.println("Thread is running now " + (l.incrementAndGet()));
 					System.out.println(a.doCriticaljob());
+					System.out.println("Thread is running now after do job" + (l.incrementAndGet()));
 					doneSignal.countDown();
 				}
 				
