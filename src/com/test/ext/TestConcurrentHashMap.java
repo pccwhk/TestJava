@@ -3,7 +3,7 @@ package com.test.ext;
 import java.util.concurrent.*;
 import java.util.*;
 
-public class TestConcurrent {
+public class TestConcurrentHashMap {
 
 	public static void main(String[] args) {
 		testHashMap();
