@@ -28,6 +28,7 @@ class MyThreadObject implements Runnable{
 		synchronized(myLock1){
 			// do something 
 			try {
+				// sleep for 5 sec to make sure other thread has started and acquired the lock 
 				Thread.sleep(5000);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
