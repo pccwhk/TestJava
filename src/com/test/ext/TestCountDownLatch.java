@@ -12,8 +12,8 @@ public class TestCountDownLatch {
 		// TODO Auto-generated method stub
 		int threadCount = 50;
 		int maxSleep = 50000;
-	    CountDownLatch startSignal = new CountDownLatch(1);
-	     CountDownLatch doneSignal = new CountDownLatch(threadCount);
+		CountDownLatch startSignal = new CountDownLatch(1);
+		CountDownLatch doneSignal = new CountDownLatch(threadCount);
 
 	     for (int i = 0; i < 50; ++i) {// create and start threads
 	       new Thread(new LatchCountDownWorker(i, startSignal, doneSignal)).start();
